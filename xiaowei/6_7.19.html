@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFE_BAIDU_4</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-color:#000;
+	}
+	.cl:after{
+		content:".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	.cl{
+		zoom: 1;
+	}
+	.contain{
+		width: 892px;
+		height: 1386px;
+		background-color: #fff;
+		margin: 0 auto;
+		padding:0 44px 0 44px; 
+	}
+	header{
+		height: 61px;
+		width: 892px;
+	}
+	main{
+		/*height: 1260px;*/
+		border-top: 2px solid #938e8c;
+		border-bottom: 1px solid #938e8c;
+		padding-top: 35px;
+		padding-bottom: 40px;
+	}
+	.lt{
+		background-color: #D45C5B;
+		width: 110px;
+		height: 61px;
+		display: inline-block;
+	}
+	.lt p{
+		font: 12px  "黑体" ;
+		color: #fff;
+		padding-left: 5px;
+		line-height: 100px; //下有5px的空格：61-5=56 56+(56-12) = 100;
+
+	}
+	.time{
+		float: right;
+		padding-top: 44px;
+		padding-right: 5px;
+		font: 12px  "黑体";
+		color: #d45d5c;
+	}
+	.top .tleft{
+		width: 641px;
+		height: 301px;
+		background-image: url("css6/p1.png");
+		display: inline-block;
+	}
+	.top .tleft div{
+		width: 191px;
+		height: 301px;
+		
+	}
+	.top .tleft .lv{
+		background-color: rgba(66, 140, 89, 0.5); 
+		display: inline-block;
+	}
+	.top .tleft .hong{
+		float: right;
+		background-color: rgba(204, 118, 128, 0.5);
+
+	}
+	.top .tright{
+		float: right;
+		width: 203px;
+		border-top: 2px solid #cc9091;
+		/*background-color: red;*/
+	}
+	.top .tright a{
+		font: 24px "微软雅黑";
+		color: #000;
+		line-height: 40px;
+		text-transform: capitalize;
+		
+	}
+	.top .tright span{
+		display: block;
+		font:12px "楷体";
+		color:#676767;
+		line-height: 10px;
+	}
+	.top .tright p{
+
+		font: 116px  "微软雅黑";
+		color:#75b86b;
+		font-style: oblique;
+		margin-left: -16px;
+	}
+	.top .tright div p{
+		float: left;
+		/*margin-top: -12px;*/
+		font: 55px "微软雅黑";
+		line-height: 55px;
+		color: #cc8091;
+		margin-left: 0px;
+		
+	}
+	.top .tright .rb{
+		float: left;
+		margin-top:17px; 
+		margin-left: 5px;
+		
+	}
+	.top .tright .rb p:first-child{
+		font-size: 21px;
+		line-height: 21px;
+		
+	}
+	.top .tright .rb p:last-child{
+		font-size: 12px;
+		line-height: 12px;
+		float: none;
+	}
+	.content{
+		margin-top: 40px;
+	}
+	.content article{
+		float: left;
+		margin-right: 30px;
+		width: 202px;
+	}
+	.content article a{
+		font: bold 16px "微软雅黑";
+		color:#d2994f;
+
+	}
+	.content article:first-child{
+		width: 225px;
+	}
+	.content article:last-child{
+		width: 131px;
+	}
+	.content article:first-child a{
+		color: #418c59;
+	}
+	.content article:last-child a{
+		color: #cc7680;
+	}
+	.content article .first_p{
+		margin-top: 10px;
+	}
+	.content article p{
+		/*background-color: red;*/
+		font: 12px "微软雅黑";
+		line-height: 16px;
+		color: #231815;
+		opacity: 0.7;
+	}
+	.content article:first-child p{
+		font-family: "宋体";
+		color: #767777;
+		opacity: 1;
+
+	}
+	.content article:last-child p{
+		line-height: 20px;
+		
+		
+	}
+	.content article span{
+		
+		font: oblique 12px "微软雅黑";
+		line-height: 16px;
+		color: #cd4a48;
+		opacity: 0.7;
+
+	}
+	.bottom{
+		margin-top: 56px;
+		/*height: 100px;*/
+		/*background-color: green;*/
+		
+	}
+	.bottom .bleft{
+		float: left;
+	}
+	.bottom .bleft .blt em{
+		font: bold oblique 72px "黑体";
+		color: #f5e327;
+		float: none;
+
+	}
+	.bottom .bleft .blt{
+		margin-top: -11px;
+	}
+	.bottom .bleft span{
+		font: bold 42px "黑体";
+		line-height: 16px;
+		color: #11456b;
+	}
+	.bottom .bleft .blt p{
+		font: bold 33px "黑体";
+		color: #11456b;
+		
+	}
+	.bottom .bleft .blb{
+		width: 415px;
+		border-top: 2px solid #11456b;
+		padding-top: 22px;
+		margin-top: 13px;
+	}
+	.bottom .bleft div em{
+		font: 70px "微软雅黑";
+		color:#f5e327;
+		float: left;
+		line-height: 70px;
+		margin-right: 5px;
+	}
+	.bottom .bleft div p{
+		font:12px "宋体";
+		color: #767777;
+		line-height: 16px;
+
+	}
+	.bottom .bleft div .suojin{
+		text-indent: 2em;
+	}
+	.bottom .bleft div img{
+		padding: 20px 6px 12px 21px;
+		height: 288px;
+		width: 167px;
+		float: right;
+	}
+	.bottom .bright{
+		/*height: 200px;*/
+		margin-left: 19px;
+		width: 458px;
+		float: right;
+		/*background-color: purple;*/
+	}
+	.btop{
+		width: 458px;
+		height: 197px;
+		position: relative;
+		background-image: url(css6/p3.png);
+		border-bottom: 60px solid rgba(0,0,0,0.5);
+	}
+	
+	.zhezhao{
+		height: 44px;
+		/*background-color: red;*/
+		position: absolute;
+		bottom: -52px;
+		left: 0;
+		margin-left: 38px;
+		border-left: 3px solid #72b16a;
+		padding-left: 9px;
+		margin-top: 8px;
+	}
+	.zhezhao p{
+		font:26px "微软雅黑";
+		color: #fff;
+		display: inline-block;
+		/*text-align: center;*/
+		line-height: 44px;
+	}
+	.zhezhao span{
+		font: oblique 12px "微软雅黑";
+		line-height: 20px;
+		color: #72b16a;
+	}
+	.bottom .bbottom{
+		margin-top: 30px;
+		width: 428px;
+		height: 287px;
+		background-color: #EDECD6;
+		padding-left: 31px;
+		padding-top: 29px;
+		position: relative;
+	}
+	.bottom .bbottom .bbpf{
+		/*float: left;*/
+	}
+	.bottom .bbottom .bbps{
+		/*float: right;*/
+		position: absolute;
+		right: 0;
+		top: 29px;
+		margin-right: 19px;
+	}
+	.bottom .bbottom .bbps em{
+		font: oblique 12px "宋体";
+		color: #5a5b5b;
+		display: block;
+		line-height: 20px;
+		margin-bottom:  20px;
+		text-align: right;
+	}
+	.bottom .bbottom p{
+		font:16px "宋体";
+		line-height: 20px;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.bottom .bbottom p .sj{
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: #10446B;
+		-webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+				clip-path: polygon(0 100%, 50% 0, 100% 100%);
+	}
+	.bottom .bbottom p em{
+		font: oblique 12px "宋体";
+		line-height: 20px;
+		text-align: right;
+	}
+	.bbdl{
+		width: 246px;
+		height: 120px;
+		background-color: #D45C5B;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding-top: 40px;
+		padding-left: 14px;
+	}
+	.bottom .bbottom .bbdl span{
+		font:110px "微软雅黑";
+		color: #fff;
+		line-height: 82px;
+		float: left;
+
+	}
+	.bottom .bbottom .bbdl div{
+		border-left: 2px solid #fff;
+		height: 86px;
+		width: 170px;
+		float: left;
+		padding-left: 5px;
+	}
+	.bottom .bbottom .bbdl div p{
+		font: oblique 21px "黑体";
+		color: #fff;
+		line-height: 24px;
+		margin-bottom: 0;
+	}
+	.bottom .bbottom .bbdl div p:last-child{
+		font: 12px "黑体";
+		line-height: 14px;
+	}
+	.bottom .bbottom .bbdr{
+		float: right;
+		width: 166px;
+		margin-right: 19px;
+	}
+	.bottom .bbottom .bbdr span{
+		font: 72px "黑体";
+		color: #d45d5c;
+		margin-right: -40px;
+		margin-top: -40px;
+		float: right;
+	}
+	.bottom .bbottom .bbdr span:first-child{
+		float: left;
+		margin: 0 0 -50px -40px;
+		margin-bottom: -50px;
+	}
+
+	.bottom .bbottom .bbdr p{
+		font:oblique 14px "黑体";
+		color: #5a5b5b;
+		line-height: 16px;
+		margin-top: 17px;
+	}
+	.time2{
+		float: right;
+		
+		padding-right: 5px;
+		font: 12px  "黑体";
+		color: #d45d5c;
+	}
+	</style>
+</head>
+<body>
+	<div class="contain">
+		<header>
+			<div class="lt">
+				<p>ife.baidu.com</p>
+			</div>
+			<p class="time">2016.03</p>
+		</header>
+		<main>
+			<div class="top">
+				<div class="tleft">
+					<div class="lv"></div>
+					<div class="hong"></div>
+				</div>
+				<div class="tright">
+
+					<a href="">ABOUT</a>
+					<a href="">TECHNOLOGE</a>
+					<span>About technology about technology about technology</span>
+					<p>700</p>
+					<div>
+						<p>3.2</p>
+						<div class="rb">
+							<p>css</p>
+							<p>cssssccsccscssc</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content cl">
+				<article>
+					<a href="">What</a>
+					<p class="first_p">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+				</article>
+				<article>
+					<a href="">How</a>
+					<p class="first_p">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+				</article>
+				<article>
+					<a href="">Why</a>
+					<p class="first_p">前端前端前端前端前</p>
+					<p>端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+					<p class="first_p">What------- <span>40%</span> </p>
+					<p>What------- <span>30%</span> </p>
+					<p>What------- <span>30%</span> </p>
+				</article>
+			</div>
+			<div class="bottom cl">
+				<div class="bleft">
+					<div class="blt">
+						<em>THE</em>
+						<span>&nbspTECHNOLOGE<br>OF FRONT</span>
+						<p>前端技术领域</p>
+					</div>
+					<div class="blb">
+						<em>前</em><p>端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前<img src="css6/p2.png" alt="">端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前。</p><p class="suojin">端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端前端前端前端前端前前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端端前端</p><p class="suojin">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端</p>
+						
+					</div>
+				</div>
+				<div class="bright">	
+					<div class="btop">
+						<div class="zhezhao">
+							<p>前端技术</p> <span>前端技术前端技术</span>
+						</div>
+					</div>
+					<div class="bbottom">
+						<div class="bbpf">
+							<p><span class="sj"></span> 前端前端前端前端前端前端 ....................</p>
+							<p><span class="sj"></span> 前端前端前端前端 ...........................</p>
+							<p><span class="sj"></span> 前端前端前端前端前端前端前端 .................</p>
+						</div>
+						<div class="bbps">
+							<em>前端</em>
+							<em>前端前</em>
+							<em>前端</em>
+						</div>
+						<div class="bbdl">
+							<span>0</span>
+							<div>
+								<p>ONE TWO</p>
+								<p>THREE FORE FIVE</p>
+								<p>hello world hello world hello world</p>
+							</div>
+						</div>
+						<div class="bbdr">
+							<span>“</span><p>world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world</p><span>”</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<p class="time2">ife.baidu.com</p>
+	</div>
+</body>
+</html>
