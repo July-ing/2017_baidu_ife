@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFE_BAIDU_7</title>
+<style>
+	*{margin: 0;padding: 0;}
+	html{
+		width: 100%;
+	}
+	body{
+		width: 100%;
+
+		min-width: 1280px;
+		/*height: 200px;	*/
+	}
+	.cl:after{
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;	
+	}
+	.cl{
+		zoom: 1;
+	}
+	.contain{
+		width: 100%;
+	}
+	header{
+		height: 57px;
+		width: 100%;
+		background-color: #fff;
+	}
+	.hcontain{
+		width: 91%;
+		padding-top: 13px;
+		margin: 0 auto;
+	}
+	.logo{
+		float: left;
+		font: 21px "黑体";
+		color: #393939;
+		line-height: 25px;
+	}
+
+	.hcontain ul,.login{
+		float: right;
+		font: 14px "微软雅黑";
+		line-height: 17px;
+		color: #787A82;
+		padding-top: 4px;
+	}
+	.login img{
+		vertical-align:bottom;
+	}
+	.logo span{
+		vertical-align:super;
+	}
+	
+	ul{
+		list-style: none;
+	}
+	ul li{
+		float: left;
+		padding: 0 25px 0 25px;
+	}
+	.currentli,.login span{
+		color: #E74F4D;
+	}
+	.currentli{
+		display: inline-block;
+		height: 35px;
+		border-bottom: 5px solid #E74F4D;
+	}
+	/*main*/
+	main{
+		width: 100%;
+	}
+/*m1start*/
+	.m1{
+		position: relative;
+
+	}
+	.m12{
+		background-color: rgba(0,0,0,0.1);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+	
+	.m1 img{
+		width: 100%;	
+		display: block;
+	}
+	.m11{
+		color: #fff;
+		font-family: "微软雅黑";
+		position: absolute;
+		top: 25%;
+		left: 9%;
+	}
+	.m11 p:first-child{
+		font-size:60px;
+		height: 72px;
+
+	}
+	.m11 p:nth-child(2){
+		font-size: 21px;
+		line-height: 30px;
+		margin: 18px 0 62px 7px;
+	}
+	.m11 button{
+		color: #fff;
+		width: 331px;
+		height: 65px;
+		background-color: #E8504E;
+		font-size: 30px;
+		margin-left: 8px;
+		text-align: center;
+		border: none;
+	}
+/*m1end*/
+/*m2start*/
+	.m2{
+		width: 100%;
+	}
+	.m21{
+		width: 1152px;
+		margin: 0 auto;
+		height: 250px;
+	}
+	.m21 ul li{
+		padding: 45px 0 45px 0;
+	}
+	.m21 ul .spec{
+		width: 170px;
+		padding-top: 130px;
+	}
+	.m21 ul .spec div{
+		width: 2px;
+		height: 50px;
+		background-color: #767677;
+	}
+	.m21 ul li div{
+		margin: auto;
+		margin-bottom: 45px;
+	}
+	.m21 ul li:first-child{
+		padding-left: 0;
+	}
+	.m21 ul li:last-child{
+		padding-right: 0;
+	}
+	.m21 ul li:first-child div{
+		width: 42px;
+		height: 42px;
+		margin-bottom: 43px;
+		background: url(src/4.png) no-repeat 0 -40px;
+
+	}
+	.m21 ul li:nth-child(3) div{
+		width: 35px;
+		height: 40px;
+		background: url(src/4.png) no-repeat 0 0;
+	}
+	.m21 ul li:nth-child(5) div{
+		width: 35px;
+		height: 40px;
+		background: url(src/4.png) no-repeat 0 -82px;
+	}
+	.m21 ul li:nth-child(7) div{
+		width: 41px;
+		height: 40px;
+		background: url(src/4.png) no-repeat 0 -122px;
+	}
+	.m21 ul li p{
+		width: 158px;
+		font: 14px "黑体";
+		line-height: 18px;
+		color: #767677;
+		text-align: center;
+	}
+/*m2end*/
+/*m3start*/
+	.m3{
+		width: 100%;
+		height: 360px;
+		background-color: #ECECEC;
+		padding-top: 90px;
+	}
+	.m3 div{
+		width: 91px;
+		height: 92px;
+		background-image: url(src/5.png);
+		margin: 90px auto;
+		margin-bottom: 44px;
+	}
+	.m3 p{
+		font: 54px "黑体";
+		line-height: 56px;
+		color: #909090;
+		text-align: center;
+	}
+/*m3end*/
+/*m4start*/
+	.m4{
+		position: relative;
+	}
+	.m4 img{
+		width: 100%;	
+		display: block;
+	}
+	.m42{
+		background-color: rgba(231,79,77,0.1);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+	.m41{
+		width: 1152px;
+		position: absolute;
+		left: 50%;
+		margin-left: -576px;
+		top: 50px;
+	}
+	.m41 p{
+		text-align: center;
+		font: 12px "微软雅黑";
+		line-height: 32px;
+		color: #fff;
+	}
+	.m41 p:first-child{
+		font: 21px "微软雅黑";
+		line-height: 42px;
+	}
+	.m41 .line{
+		height: 3px;
+		width: 31px;
+		background-color: #fff;
+		margin: 5px auto;
+		margin-bottom: 18px;
+	}
+	.m41 ul{
+		margin-top: 47px;
+	}
+	.m41 input,button{
+		padding-left: 10px;
+		padding-right: 9px;
+		font: 12px "微软雅黑";
+		color: #A8A9AA;
+		border: none;
+		width: 217px;
+		height: 36px;
+	}
+	.m41 .inputli div {
+		position: relative;
+	}
+	.m41 .inputli div div{
+		width: 19px;
+		height: 18px;
+		background: #BE4F48 url(src/7.png) no-repeat 3px 6px;
+		position: absolute;
+		bottom: 9px;
+		right: 9px;
+	}
+	.m41 button{
+		background-color: #BE4F48;
+	}
+	.m41 .currentli2{
+		border: 1px solid #BE4F48;
+		height: 34px;
+		width: 215px;
+	}
+	.m41 .ul2{
+		position: absolute;
+		top: 36px;
+		margin-top: 0;
+		background-color: #E3E3E4;
+		border: 1px solid #BE4F48;
+	}
+	.m41 .ul2 li{
+		float: none;
+		position: relative;
+		height: 27px;
+		font: 12px "微软雅黑";
+		line-height: 27px;
+		color: #323232;
+		width: 184px;
+	}
+	.m41 .ul2 li div{
+		height: 19px;
+		margin-top: 4px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	.m41 .ul2 li .cpdiv{
+		display: inline-block;
+	}
+	.m41 .ul2 .cpli{
+		background-color: #BE4F48;
+		color: #FEFEFE;
+	}
+/*m4end*/
+/*m5start*/
+	.m5{
+		width: 100%;
+		background-color: #F8F7F7;
+		padding-top:100px; 
+		
+	}
+	.m51{
+		width: 80%;
+		height: 606px;
+		margin: 0 auto;
+	}
+	.m51 div{
+		width: 25%;
+		display: inline-block;
+	}
+	.m5 .m51 .borderdiv{
+		border: 1px solid #DCDCDC;
+		padding: 7px 7px 16px 7px;
+		width: 204px;
+		background-color: #fff;
+
+	}
+	.m5 .m51 .widthdiv:nth-child(4){
+		width: 218px;
+	}
+	.m5 .m51 .widthdiv:first-child .imgdiv{
+		background: url(src/9.png) 0 0 no-repeat;
+		height: 313px;
+		width: 202px;
+	}
+	.m5 .m51 .widthdiv:nth-child(2) .imgdiv{
+		background: url(src/9.png) -254px -52px no-repeat;
+		height: 313px;
+		width: 202px;
+	}
+	.m5 .m51 .widthdiv:nth-child(3) .imgdiv{
+		background: url(src/9.png) -512px 0 no-repeat;
+		height: 313px;
+		width: 202px;
+	}
+	.m5 .m51 .widthdiv:nth-child(4) .imgdiv{
+		background: url(src/9.png) -767px 0 no-repeat;
+		height: 313px;
+		width: 202px;
+	}
+	.m51 .widthdiv .pdiv{
+		height: 52px;
+		width: 218px;
+		padding-top: 15px;
+	}
+	.m51 .widthdiv .pdiv p,span{
+		text-align: center;
+	}
+	.m51 .widthdiv .pdiv span{
+		display: block;
+		color: rgb(119,120,124);
+    	font-size: 12px;
+    	line-height: 20px;
+	}
+/*m5end*/
+/*m6start*/
+	.m6{
+		width: 100%;
+	}
+	.m6t,.m6b,.m6b2{
+		width: 33.5%;
+	}
+	.m6tc{
+		width: 66.5%;
+		background: url(src/12.png) no-repeat;
+		background-size: 100% 100%;
+	}
+	.m6c{
+		width: 33%;
+	}
+	.m6b,.m6tc{
+		float: left;
+		height: 564px;
+	}
+	.m6tc div{
+		margin: 123px auto;
+		width: 382px;
+	}
+	.m6tc div p{
+		text-align: center;
+		font: 158px "微软雅黑";
+		color: #fff;
+		line-height: 158px;
+	}
+	.m6tc div p:first-child{
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.m6tc div p:last-child{
+		margin-top:30px; 
+		font-size: 22px;
+		line-height: 44px;
+	}
+	.m6b{
+		position: relative;
+	}
+	.m6b img{
+		position: absolute;
+		top: 50%;
+		display: block;
+		left: -26px;
+		margin-top: -15px;
+	}
+	.m6b .juzhong2{
+		text-align: center;
+		margin: 163px auto;
+		width: 292px;
+	}
+	.m6b .juzhong2 p:first-child{
+		font-size: 1.2em;
+	}
+	.m6b .juzhong2 p:first-child span{
+		color: #E74F4D;
+	}
+	.m6b .juzhong2 p:nth-child(2){
+		margin: 15px 0;
+		font: 12px "宋体";
+		color: #929292;
+		line-height: 30px;
+		text-align: left;
+	}
+	.m6b .juzhong2 .juzhong21{
+		width: 103px;
+		height: 31px;
+		border: 1px solid #E64E4C;
+		margin: 45px auto;
+		margin-bottom: 0;
+	}
+	.m6b .juzhong2 .juzhong21 p{
+		font:12px "微软雅黑";
+		line-height: 31px;
+		color: #E64E4C;	
+	}
+	.m6b .juzhong2 .quan{
+		width: 103px;
+		height: 31px;
+		margin: 15px auto;
+	}
+	.m6b .juzhong2 .quan span{
+		width: 10px;
+		height: 10px;
+		margin-right: 7px;
+		border-radius: 10px;
+		border: 1px solid #929292;
+		display: inline-block;
+	}
+	.m6b .juzhong2 .quan span:last-child{
+		margin-right: 0;
+	}
+	.m6b .juzhong2 .quan .currentspan{
+		background-color: #929292;
+	}
+	.m62 div{
+		height: 351px;
+
+	}
+	.m62 .m6t,.m6c{
+		background-color: #E74F4D;
+		padding-top: 170px;
+		float: left;
+	}
+	.m62 .m6t div,.m6c div{
+		width: 172px;
+		margin: 0 auto;
+	}
+	.m62 p{
+		font:21px "黑体";
+		line-height: 31px;
+		color: #FEFEFE;
+		text-align: center;
+	}
+	.m6 .m62 .line{
+		height: 2px;
+		width: 31px;
+		background-color: #fff;
+		margin: 20px auto;
+		margin-bottom: 18px;
+	}
+	.m6 .m62 .kuang{
+		width: 168px;
+		height: 40px;
+		border: 1px solid #fff;
+		margin-top: 25px;
+		text-align: center;
+		font:21px "黑体";
+		line-height: 40px;
+		color:#fff;
+	}
+	.m6c div p{
+		color: #323232;
+	}
+	.m6 .m6c div .line{
+		background-color: #323232;
+	}
+	.m6 .m6c div .kuang{
+		border-color: #E8504E;
+		color: #E8504E;
+	}
+	.m6 .m6c{
+		background-color: #fff;
+	}
+	.m6 .m6b2{
+		height: 521px;
+		float: left;
+		background: url(src/13.png)no-repeat;
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+/*m6end*/
+/*m7start*/
+	.m7{
+		width: 100%;
+	}
+	.m71{
+		width: 79%;
+		margin: 0 auto;
+		padding-top: 112px;
+	}
+	.m7t{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 100px; 
+	}
+	.m7t h1{
+		font:21px "黑体";
+		line-height: 31px;
+		color: #323232;
+	}
+	.m7t p{
+		font: 12px "微软雅黑";
+		line-height: 18px;
+		color: #AAAAA9;
+	}
+	.m7t .line{
+		height: 2px;
+		width: 31px;
+		background-color: #E74F4D;
+		margin: 5px auto;
+		margin-bottom: 18px;
+	}
+	.m7b{
+		margin-bottom: 130px;
+	}
+	.m7bl,.m7br{
+		float: left;
+	}
+	.m7bl{
+		width: 40%;
+	}
+	.m7br{
+		width: 60%;
+	}
+	.m7bl h2{
+		font: 14px "黑体";
+		line-height: 17px;
+		color: #221814;
+	}
+	.m7bl div .wdiv{
+		width: 75%;
+	}
+	.m7bl p{
+		font: 12px "宋体";
+		line-height: 21px;
+		color: #221814;
+		margin-top: 20px;
+	}
+	.m7bl div div div{
+		float: right;
+		font: 12px "宋体";
+		line-height: 20px;
+		color: #221814;
+		margin-bottom: 35px;
+	}
+	.m7bl div div div span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: url(src/14.png) center bottom no-repeat;
+	}
+	.m7br{
+		height: 200px;
+	}
+	.m7br .m7brt{
+		width: 100%;
+	}
+	.m7br .m7brt .m7brtl,.m7brtr{
+		width: 48%;
+	}
+	.m7br .m7brt .m7brtl{
+		float: left;
+	}
+	.m7br .m7brt .m7brtr{
+		float: right;
+	}
+	.m7br .m7brb div,.m7brtl div,.m7brtr div{
+		margin-bottom: 16px;
+		position: relative;
+		width: 100%;
+	}
+	.m7br input,textarea{
+		border:none;
+		height: 38px;
+		background-color: #EDECEE;
+		width: 100%;
+	}
+	.m7br label{
+		font: 12px "宋体";
+		line-height: 14px;
+		color: #221814;
+		position: absolute;
+		top: 11px;
+		left: 11px;
+	}
+	.m7br textarea{
+		height: 159px;
+	}
+/*m7end*/
+/*m8start*/
+	.m8{
+		width: 100%;
+		height: 273px;
+		background-color: #32353E;
+		padding-top: 85px;
+	}
+	.m81{
+		width: 511px;
+		height: 100px;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+	}
+	.m81 h3{
+		font: 21px "黑体";
+		line-height: 48px;
+		
+	}
+	.m81 p{
+		font: 12px "宋体";
+		line-height: 18px;
+	}
+	.m81 div{
+		margin: 25px 0;
+		width: 100%;
+	}
+	.m81 input{
+		border: none;
+		height: 41px;
+	}
+	.m81 .text{
+		width: 85%;
+		font: 14px "微软雅黑";
+		color: #AAAAA9;
+	}
+	.m81 .submit{
+		width: 15%;
+		font: 15px "微软雅黑";
+		background-color: #6F7178;
+		color: #fff;
+	}
+	.m81 div:last-child{
+		width: 184px;
+		margin: 0 auto;
+	}
+	.m81 span{
+		width: 29px;
+		height: 25px;
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.m81 span:first-child{
+		width: 24px;
+		background: url(src/18.png) no-repeat;
+	}
+	.m81 span:nth-child(2){
+		background: url(src/17.png) no-repeat;
+	}.m81 span:nth-child(3){
+		background: url(src/16.png) no-repeat;
+	}.m81 span:last-child{
+		width: 24px;
+		background: url(src/15.png) no-repeat;
+		margin-right: 0;
+	}
+/*m8end*/
+	footer{
+		width: 100%;
+		height: 30px;
+		padding-top:25px; 
+		background-color: #2F2F38;
+	}
+	footer div{
+		width: 95%;
+		margin: 0 auto;
+		font: 12px "宋体";
+		line-height: 23px;
+		color: #FEFEFE;
+	}
+	footer .fl{
+		float: left;
+		margin-left: 70px;
+	}
+	footer .fr{
+		float: right;
+	}
+</style>
+</head>
+<body>
+	<div class="contain">		
+		<header>
+			<div class = "hcontain">
+				<div class = "logo" ><img src="src/1.png" alt=""><span> 新世界</span></div>
+				<div class="login"><img src="src/2.png" alt="">  <span>登录</span></div>
+				<ul>
+					<li class="currentli">首页</li>
+					<li>最新活动</li>
+					<li>项目介绍</li>
+					<li class="currentli">爱心社区</li>
+					<li >关于我们</li>
+				</ul>
+				
+			</div>
+		</header>
+		<main>
+			<div class="m1">
+				<div class="m12"></div>
+				<img src="src/3.png" alt="" >	 
+				<div class="m11">
+					<p>Time of new life</p>
+					<p>新时代，年轻的人们让我们一起<br>体验新生活，享受新生活</p>
+					<button>开始体验</button>
+				</div>
+			</div>	
+			<div class="m2">
+				<div class="m21">
+					<ul>
+						<li><div></div><p>打造全新世界，让你更爱你的生活</p></li>
+						<li class="spec"><div></div></li>
+						<li><div></div><p>丰富多彩的公益援助，发挥新世界的主人公意识</p></li>
+						<li class="spec"><div></div></li>
+						<li><div></div><p>时尚的新理念，超能体验未知的生活</p></li>
+						<li class="spec"><div></div></li>
+						<li><div></div><p>完善培养机制，培养你全新的世界观</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="m3">
+				<div></div>
+				<p>关于新世界，你不知道的还有什么？</p>
+			</div>
+			<div class="m4">
+				<div class="m42"></div>
+				<img src="src/8.png" alt="">
+				<div class="m41">
+					<p>查找新世界城市活动信息</p>
+					<div class="line"></div>
+					<p>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
+					<ul >
+						<li class="inputli"><div><input type="text" value="中国"><div></div></div></li>
+						<li class="inputli"><div><input type="text" value="省份" class="currentli2"><div></div>
+							<ul  class="ul2" >
+								<li class="cpli">
+									<div class="cpdiv"></div>北京市
+								</li>
+								<li>
+									<div></div>天津市
+								</li>
+								<li>
+									<div></div>河北省
+								</li>
+								<li>
+									<div></div>山西省
+								</li>
+								<li>
+									<div></div>内蒙古自治区
+								</li>
+								<li>
+									<div></div>辽宁省
+								</li>
+							</ul>
+						</div></li>
+						<li class="inputli"><div><input type="text" value="城市"><div></div>
+							</div></li>
+						<li><button>搜&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp索</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="m5">
+				<div class="m51">
+					<div class="widthdiv"><div class="borderdiv"><div class="imgdiv"></div></div><div class="pdiv"><p>北京活动</p><span>新社区大联盟</span></div></div>
+					<div class="widthdiv"><div class="pdiv"><p>上 海 活 动</p><span>夜上海新景观探索</span></div><div class="borderdiv"><div class="imgdiv"></div></div></div>
+					<div class="widthdiv"><div class="borderdiv"><div class="imgdiv"></div></div><div class="pdiv"><p>深圳活动</p><span>全新海岸线观战点</span></div></div>
+					<div class="widthdiv"><div class="borderdiv"><div class="imgdiv"></div></div><div class="pdiv"><p>香港活动</p><span>奢侈消费大派送</span></div></div>
+				</div>
+			</div>
+			<div class="m6">
+				<div class="m61 cl"><div class="m6tc">
+				<div>
+					<p>新世界</p>
+					<p>TIME</p>
+					<p>@新世界 - 北京<br>2016.04.01</p>
+				</div></div><div class="m6b">
+					<img src="src/10.png" alt="">
+					<div class="juzhong2">
+						<p>新世界╱<span>01</span></p>
+						<p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
+						<div class="juzhong21"><p>更多详情</p></div>
+						<div class="quan"><span class="currentspan"></span>
+						<span></span>
+						<span></span></div>
+					</div>
+				</div></div>
+				<div class="m62 cl">
+					<div class="m6t"><div><p>新时代<br>关于爱生活的我们</p><div class="line"></div><div class="kuang">查看更多</div></div></div>
+					<div class="m6c"><div><p>新时代<br>关于爱生活的我们</p><div class="line"></div><div class="kuang">查看更多</div></div></div>
+					<div class="m6b2"></div>
+				</div>	
+			</div>
+			<div class="m7">
+				<div class="m71">
+					<div class="m7t">
+						<h1>成为我们的志愿者</h1>
+						<div class="line"></div>
+						<p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情<br>那就不要犹豫，快来加入我们，成为改变所有人生活的人 </p>
+					</div>
+					<div class="m7b cl">
+						<div class="m7bl">
+							<div class="cl"><div class="wdiv"><h2>新世界志愿者协议</h2><p>加入新世界志愿者的人员必须遵守中华人民共共和国的相关法律法规，并且本着平等资源的原则 ......</p><div><span></span> more</div></div></div>
+							<div class="cl"><div class="wdiv"><h2>新世界志愿者权利</h2><p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在四新世界活动的优先参与资格</p><div><span></span> more</div></div></div>
+							<div class="cl"><div class="wdiv"><h2>更多条款</h2><div><span></span><em> more</em></div></div></div>
+						</div>
+						<form class="m7br">
+							<div class="m7brt cl">
+								<div class="m7brtl">
+									<div><label for="">姓名：</label><input type="text"></div>
+									<div><label for="">联系方式：</label><input type="text"></div>
+								</div>
+								<div class="m7brtr">
+									<div><label for="">姓名：</label><input type="text"></div>
+									<div><label for="">联系方式：</label><input type="text"></div>
+								</div>
+							</div>
+							<div class="m7brb">
+								<div><label for="">请简单描述您梦想的生活：</label><textarea name="" id="" cols="30" rows="10"></textarea></div>
+								<div><input type="submit" value="提交申请"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="m8">
+				<div class="m81">
+					<h3>联系我们</h3>
+					<p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<br>也可以通过以下任何方式关注我们动态</p>
+					<div>
+						<input class="text" type="text" value="   someone@email.com"><input class="submit" type="submit">
+					</div>
+					<div><span></span>
+					<span></span>
+					<span></span>
+					<span></span></div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="cl">
+				<p class="fl">@2016新世界</p>
+				<p class="fr">Back to top</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
