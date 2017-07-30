@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFE_BAIDU_10</title>
+	<style>
+		*{margin: 0;padding: 0;box-sizing:border-box;}
+		.flexContain{
+			display: flex;
+			height: 300px;
+			background-color: black;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+		.flexContain div{
+			width: 150px;
+			background-color: #ccc;
+			padding: 20px;
+			order:2;
+		}
+		.flexContain div:nth-of-type(1){
+			height: 120px;
+			background-color: #f00;
+		}
+		.flexContain div:nth-of-type(2){
+			height: 100px;
+		}
+		.flexContain div:nth-of-type(3){
+			height: 40px;
+		}
+		.flexContain div:nth-of-type(4){
+			height: 200px;
+			background-color: #0f0;
+		}
+		@media screen and (max-width: 640px){
+			.flexContain{
+				align-items:flex-start;
+				flex-wrap:wrap;
+			}
+			.flexContain div:nth-of-type(4){
+				order:1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="flexContain">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFE_BAIDU_12</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		.container{
+			margin: 200px auto;
+			box-shadow: 0 0 26px #0099CC;
+			border:2px solid #0099CC;
+			-moz-border-radius:5px; /* Old Firefox */
+			     border-radius:5px;
+			padding: 20px;
+			width: 75%;
+		}
+		table{
+			margin: 0 auto;
+			text-align: left;
+			border-collapse: collapse;
+
+		}
+		table,th,td{
+			border: 2px solid #fff;
+		}
+		thead{
+			background-color: #000;
+			color: #fff;
+		}
+		tbody tr:nth-of-type(1) td,tbody tr:nth-of-type(2) td,tbody tr:nth-of-type(3) td{
+			color: red;
+		}
+		tbody tr:nth-of-type(even) td{
+			background-color: #ccc;
+		}
+		input{
+			margin: 20px auto;
+			width: 20%;
+			display:block;
+			transition:all 0.3s;
+			border-radius: 5px;
+			box-sizing:border-box;
+		}
+		input:focus{
+			width: 35%;
+			box-shadow: 0 0 5px #0099CC;
+			border:1px solid #0099CC;
+		}
+		.window{
+			position: relative;
+			margin: 5% auto;
+			width: 200px;
+			height: 150px;
+			overflow: hidden;
+		}
+		.window p{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			
+			
+		}
+		.window a{
+			z-index: 2;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 20px;
+			height:20px;
+			background-color: rgba(255,255,255,0.5);
+		}
+		.window a:nth-of-type(2){
+			right: 20px;
+		}
+		.window a:first-of-type{
+			right: 40px;
+		}
+		.window ul{
+			position: absolute;
+			width: 600px;
+			padding: 0;
+			transition: left 1s ease-in-out;
+		}
+		.window li{
+			list-style-type: none;
+			width: 200px;
+			height: 150px;
+			display: inline-block;
+
+		}
+		li:first-child{
+			background-color: yellow;
+		}
+		li:nth-of-type(2){
+			background-color: blue;
+		}
+		li:last-child{
+			background-color: red;
+		}
+		#li1:target~.fluid{
+			background-color: #fff;
+			left:0px;
+		}
+		#li2:target~.fluid{
+			left:-200px;
+		}
+		#li3:target~.fluid{
+			left:-400px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th>排名</th>
+					<th>网站</th>
+					<th>热度</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1.</td>
+					<td>百度前端技术学院</td>
+					<td>13000</td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td>百度前端技术学院</td>
+					<td>12000</td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td>百度前端技术学院</td>
+					<td>11000</td>
+				</tr>
+				<tr>
+					<td>4.</td>
+					<td>百度前端技术学院</td>
+					<td>10000</td>
+				</tr>
+				<tr>
+					<td>5.</td>
+					<td>百度前端技术学院</td>
+					<td>9000</td>
+				</tr>
+				<tr>
+					<td>6.</td>
+					<td>百度前端技术学院</td>
+					<td>8000</td>
+				</tr>
+				<tr>
+					<td>7.</td>
+					<td>百度前端技术学院</td>
+					<td>7000</td>
+				</tr>
+				<tr>
+					<td>8.</td>
+					<td>百度前端技术学院</td>
+					<td>6000</td>
+				</tr>
+				<tr>
+					<td>9.</td>
+					<td>百度前端技术学院</td>
+					<td>5000</td>
+				</tr>
+				<tr>
+					<td>10.</td>
+					<td>百度前端技术学院</td>
+					<td>4000</td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="text">
+		<div class="window">
+			<a href="#li1" id="li1">1</a><a href="#li2"id="li2">2</a><a href="#li3" id="li3">3</a>
+			<ul class="fluid">
+				<li>1</li><li>2</li><li>3</li>
+				
+			</ul>
+			
+		</div>
+	</div>
+</body>
+</html>

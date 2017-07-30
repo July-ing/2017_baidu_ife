@@ -1,0 +1,196 @@
+html, body { margin: 0; height: 100%;
+/* 禁止选中文本（如无文本选中需求，此为必选项） */
+	-webkit-user-select: none;
+    user-select: none;
+}
+body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif, "微软雅黑"; color: #333; }
+p {margin: 0;}
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="button"],
+input[type="password"],
+select,
+button,
+textarea { margin: 0; padding: 0; border: 0; -webkit-appearance:none; border: 0; outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0); font-size: 1.2rem; background: transparent; }
+/* 禁止长按链接与图片弹出菜单 */
+a, img {
+    -webkit-touch-callout: none;
+}
+header{
+	width: 100%;
+	background-color: #7FCBF0;
+	color: #fff;
+	position: relative;
+}
+header span{
+	position: absolute;
+	top: 25%;
+}
+header em{
+	padding-left: 0.65rem;
+	font-size: 2rem;
+	vertical-align: middle;
+}
+header h1{
+	width: 100%;
+	line-height: 2.4;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.875rem;
+	margin: 0;
+	font-weight:normal;
+}
+ul{
+	padding-left: 0;
+	margin: 0;
+}
+nav li{
+	list-style: none;
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	font-size: 1.75rem;
+	box-sizing:border-box;
+	height: 5rem;
+	line-height: 5rem;
+}
+nav li:hover{
+	border-bottom: 3px solid #7FCBF0;
+}
+
+article{
+	background-color: #F5F5F5;
+}
+section{
+	background-color: #fff;
+}
+article img{
+	width: 100%;
+}
+article .label li{
+	list-style: none;
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+}
+article .label li figure{
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+	background: #7FCBF0;
+	margin: 1rem auto;
+}
+article .label li figure img{
+	width: 3rem;
+	height: 3.2rem;
+	margin: 0.9rem auto;
+}
+article .aside{
+	width: 95%;
+	border-top: .1rem solid #DEDEDE;
+	margin: 0 auto;
+	padding: 2%;
+}
+article .aside div{
+	width: calc(33% - .1rem);
+	padding-top: 0.2rem;
+	text-align: center;
+	display: inline-block;
+	box-sizing:border-box;
+}
+article .aside div:nth-of-type(2){
+	width: calc(33% + .2rem);
+	border-left: .1rem solid #DEDEDE;
+	border-right: .1rem solid #DEDEDE;
+}
+article .aside div h3{
+	color: #5E5E5E;
+}
+article [class*='model']{
+	margin-top: 5%;
+	background-color: #fff;
+	padding: 2%; 
+}
+article [class*='model'] div{
+	margin-top: 2%;
+	padding-top: 2%;
+	border-top: .1rem solid #DEDEDE;
+	display: flex;
+}
+article [class*='model'] div img{
+	width: 28%;
+	height: 45%;
+	border: .1rem solid #FEB832;
+}
+article [class*='model'] div ul{
+	width: 70%;
+	margin-left: 2%;
+	display: flex;
+	flex-wrap:wrap;
+}
+article [class*='model'] div li{
+	display: flex;
+	width: 47.5%;
+	height: 45%;
+	background-color: #F8F8F8;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	align-items: center;
+    justify-content: center;
+}
+article [class*='model'] div ul li:nth-of-type(2),article [class*='model'] div ul li:nth-of-type(4){
+	margin-right: 0;	
+}
+article article{
+	margin-top: 5%;
+}
+article article section{
+	padding: 2%;
+	display: flex;
+	border-top: .1rem solid #DEDEDE;
+
+}
+article article section img{
+	width: 28%;
+	height: 45%;
+}
+article article section div{
+	width: 70%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+article article section  h2{
+	font-size: 1.375rem;
+	margin: 0;
+}
+article article section  p{
+	color: #ccc;
+}
+article article section.bottom{
+	display: flex;
+	flex-direction:column;
+}
+article article section.bottom div{
+	display: flex;
+	flex-direction:row;
+	width: 100%;
+	margin: 2% 0;
+}
+article article section.bottom img{
+	width: 33%;
+	height: 45%;
+}
+footer{
+	width: 100%;
+	height: 7%;
+	background-color: #F8F8F8;
+}
+@media screen and (max-width: 600px) {
+    html { font-size: 65%;}
+}
