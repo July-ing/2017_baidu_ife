@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		li{
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			color: #fff;
+			display: inline-block;
+			text-align: center;
+			line-height: 50px;
+			margin-right: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<input type="input" value="请输入一个数字" id="ipt">
+	<button id="leftinsert">左侧入</button>
+	<button id="rightinsert">右侧入</button>
+	<button id="leftdelete">左侧出</button>
+	<button id="rightdelete">右侧出</button>
+	<div>
+		<ul id="ul"><li>1</li><li>2</li></ul>
+	</div>
+	<script>
+		var $ = function(id){
+			return document.getElementById(id);
+		}
+		var ipt = $('ipt');
+		var Ul = $("ul");
+		
+		var last = Ul.lastChild;
+		var LeIn = $("leftinsert");
+		var LeDe = $("leftdelete");
+		var RiIn = $("rightinsert");
+		var RiDe = $("rightdelete");
+
+		ipt.addEventListener("focus",function(){
+			if(ipt.value == ipt.defaultValue){
+				ipt.value="";
+			}
+		})
+		ipt.addEventListener("blur",function(){
+			if(ipt.value === ""){
+				ipt.value = ipt.defaultValue;
+			}
+		})
+		LeIn.addEventListener("click", function(){
+			if(isNum()){
+				var first = Ul.firstChild;
+				Ul.insertBefore(create(),first);
+				ipt.value="";
+			}
+			return false;
+		})
+		RiIn.addEventListener("click",function(){
+			if(isNum()){
+				Ul.appendChild(create());
+				ipt.value="";
+			}
+		})
+		LeDe.addEventListener("click", function(){
+			var first = Ul.firstChild;
+			if(first){				
+				Ul.removeChild(first);
+				ipt.value="";
+			}else{
+				alert("没有节点可以删除！");
+			}
+		})
+		RiDe.addEventListener("click",function(){
+			var last = Ul.lastChild;
+			if(last){
+				Ul.removeChild(last);
+				ipt.value;
+			}else{
+				alert("没有节点可以删除！");
+			}
+
+		})
+		function isNum(){
+			
+			var txt = ipt.value;
+			if(isNaN(txt) || txt === ""){
+				alert("请输入一个数字！");
+				ipt.value = "";
+				return false;
+			}
+			return true;
+		}
+		function create(){
+			var li = document.createElement('li');
+			var value = document.createTextNode(ipt.value);
+			li.appendChild(value);
+			return li;
+		}
+	</script>
+</body>
+</html>
